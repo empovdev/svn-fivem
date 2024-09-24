@@ -1,0 +1,195 @@
+@font-face {
+    font-family: def;
+    src: url(../fonts/SquadaOne-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: def2;
+    src: url(../fonts/Dosis-Medium.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: AkrobatBlack;
+    src: url('../fonts/Akrobat-Black.ttf');
+  }
+  
+  @font-face {
+    font-family: AkrobatBold;
+    src: url('../fonts/Akrobat-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: AkrobatExtraBold;
+    src: url('../fonts/Akrobat-ExtraBold.ttf');
+  }
+  
+  
+  @font-face {
+    font-family: AkrobatLight;
+    src: url('../fonts/Akrobat-Light.ttf');
+  }
+  
+  @font-face {
+    font-family: AkrobatExtraLight;
+    src: url('../fonts/Akrobat-ExtraLight.ttf');
+  }
+  
+  
+  @font-face {
+    font-family: AkrobatRegular;
+    src: url('../fonts/Akrobat-Regular.ttf');
+  }
+  
+  
+  @font-face {
+    font-family: AkrobatSemiBold;
+    src: url('../fonts/Akrobat-SemiBold.ttf');
+  }
+  
+  @font-face {
+    font-family: AkrobatThin;
+    src: url('../fonts/Akrobat-Thin.ttf');
+  }
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: none;
+}
+
+.mainoverlary {
+    width: 42rem;
+    height: 26rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: rgba(39, 46, 56, 0.9);
+    border-radius: 1rem;
+}
+
+.header{
+    color: rgb(10 242 184);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: AkrobatBold;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+    display: flex;
+    text-shadow: 0px 0px 10px rgba(10 ,242 ,184,0.6);
+  }
+  
+  .alt{
+    color: rgb(148, 151, 151);
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: AkrobatBold;
+    margin-left: 2.55rem;
+    margin-top: -0.05rem;
+    display: flex;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    left: 37.5%;
+    top: 39%;
+    width: 25%;
+    height: 18%;
+    border-radius: 1.0vh;
+    background-color: #456959;
+    align-items: center;
+}
+
+.container span {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: def;
+    text-transform: uppercase;
+    font-size: 5.0vh;
+    margin-top: 1.0%;
+    width: 100%;
+    height: 15%;
+}
+
+.input-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 10vh;
+    width: 97%;
+    height: 50%;
+    border: none;
+    background-color: #456959;
+    margin-bottom: 1%;
+    font-family: AkrobatBold;
+    text-transform: uppercase;
+}
+
+.btn-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 28vw;
+    height: 7vh;
+    left: 35.9%;
+    top: 58%;
+    margin-top: 0.5%;
+}
+
+.btn-container button {
+    width: 32%;
+    height: 68%;
+    color: aliceblue;
+    border: none;
+    border-radius: 0.5vh;
+    box-shadow: 0 0.3vh 0.4vh #00000058, 0 0 20vh #0000001a;
+    font-family: AkrobatBold;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3vw;
+    font-weight: 700;
+    background-color: #04d39f96;
+    transition: 0.2s;
+}
+
+.btn-container button#two {
+    background-color: #C02D2D; /* Change the background color to red */
+}
+
+.btn-container button:nth-of-type(1):hover {
+    background-color: rgb(10 242 184);
+}
+
+.btn-container button:nth-of-type(2):hover {
+    background-color: rgb(255, 0, 34);
+}
+
+.exit {
+    border-left: 1px solid rgb(255, 254, 254, 0.1);
+    border-top: 1px solid rgb(255, 254, 254, 0.1);
+    border-bottom: 1px solid rgb(255, 254, 254, 0.1);
+    padding: 0.03rem 0.6rem;
+    font-size: 0.8rem;
+    color: rgb(255, 254, 254, 0.4);
+    margin-left: 33.47rem;
+    position: absolute;
+    margin-top: -1.55rem;
+    font-family: AkrobatLight;
+    transition-property: 0.5s;
+  }

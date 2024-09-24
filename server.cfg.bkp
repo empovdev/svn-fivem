@@ -1,0 +1,114 @@
+## svn FiveM
+## svn Server V1
+## Thank you for purchasing the svn Server! We appreciate your support and are excited to have you as part of our community.
+
+## Join our Discord for help - https://discord.gg/P4B4hYUujN
+## Subscribe our Youtube channel - https://youtube.com/@svnfivem
+## If you like more Nopixel Inspired scripts, get from here - https://svn.tebex.io/
+
+# ___  ___     _             
+# |  \/  |    | |            
+# | .  . | ___| |_ ___  ___  
+# | |\/| |/ _ \ __/ _ \/ _ \ 
+# | |  | |  __/ ||  __/ (_) |
+# \_|  |_/\___|\__\___|\___/ 
+                                               
+#   ____  ____   _____
+#  / __ \|  _ \ / ____|
+# | |  | | |_) | |     ___  _ __ ___
+# | |  | |  _ <| |    / _ \| '__/ _ \
+# | |__| | |_) | |___| (_) | | |  __/
+#  \___\_\____/ \_____\___/|_|  \___|
+
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+
+sv_maxclients 8  ## Defualt set 8 for streaming custing clothing (if you need more slot with custom clothing you should buy fivem patreon) - https://www.patreon.com/fivem
+set steam_webApiKey "none"
+sets tags "test, jobs, qbcore, cars, semi rp" ## Add Server Tags You Want
+
+## You MAY edit the following:
+sv_licenseKey "cfxk_1FZGBCyCw1B8Lgrs1UqBz_1wfdKw" ## You Should need licenseKey to start server - https://keymaster.fivem.net/
+
+sv_hostname "http://localhost"
+sets sv_projectName "TP V4 Inspired Server"
+sets sv_projectDesc "Your ultimate FiveM Server with jobs, gangs, housing, and unique scripts!"
+
+sets locale "en-US" ## Your Country
+set mysql_connection_string "mysql://root@localhost/svnnp4?charset=utf8mb4" ## Your Database (if you useing Windows Vps don't need to edit this)
+
+set temp_convar "Welcome to TP"
+sets Discord "https://discord.gg/yjAYdw97mV"
+sets Dev "empov"
+sets Framework "qbcore"
+
+set sv_listingIPOverride "0.0.0.0"    # Put your server ip with port
+sets banner_detail "https://i.ibb.co/NtQ5tHd/standard.gif"
+sets banner_connecting "https://i.ibb.co/NtQ5tHd/standard.gif"
+
+## Not Recommed to edit if you don't have knowledge with fivem
+load_server_icon svn.png
+set sv_enforceGameBuild 2944
+
+setr voice_useNativeAudio true
+setr voice_useSendingRangeOnly true
+setr voice_defaultCycle "GRAVE"
+setr voice_defaultVolume 0.3
+setr voice_enableRadioAnim 1
+setr voice_syncData 1
+
+setr qb_locale "en"
+setr UseTarget true
+
+# Ensure Your Maps, Mlo and Vehicles here. (Don't add scripts)
+ensure [clothing]
+ensure [defaultmaps]
+ensure [vehicles]
+ensure [guns]
+ensure [assets]
+
+# These resources will start by default. (Don't Change The Order)
+ensure mapmanager ## DONT CHANGE
+ensure spawnmanager ## DONT CHANGE
+ensure sessionmanager ## DONT CHANGE
+ensure basic-gamemode ## DONT CHANGE
+ensure hardcap ## DONT CHANGE
+ensure baseevents ## DONT CHANGE
+ensure qb-core ## DONT CHANGE
+ensure qb-target ## DONT CHANGE
+ensure chat ## DONT CHANGE
+ensure ox_lib ## DONT CHANGE
+ensure okokChatV2 ## DONT CHANGE
+ensure svn
+## ---------------------- ##
+
+# Ensure Your New Scripts Below
+ensure [qb]
+ensure [svn]
+ensure [unique]
+ensure [banking]
+ensure [housing]
+ensure [jim]
+ensure [jobs]
+ensure [ps]
+ensure [drugs]
+ensure [utk]
+ensure [robberies]
+ensure [voice]
+ensure [standalone]                                  
+ensure [updates]
+ensure distrtc_nogrip                                                                                    
+# Add Your New Admins Below
+# EXAMPLES - https://docs.qbcore.org/qbcore-documentation/guides/setting-permissions
+
+# add_principal identifier.license:999999999999999999 qbcore.admin
+# add_principal identifier.license:999999999999999999 qbcore.god
+
+
+## Not Recommed to edit if you don't have knowledge with fivem
+add_ace group.admin command allow # allow all commands
+add_ace resource.qb-core command allow # Allow qb-core to execute commands
+add_ace qbcore.god command allow # Allow all commands
+add_principal qbcore.god group.admin # Allow gods access to the main admin group used to get all default permissions
+add_principal qbcore.god qbcore.admin # Allow gods access to admin commands
+add_principal qbcore.admin qbcore.mod # Allow admins access to mod commands

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Basic identifier stuff-->
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="FiveM Plate Changer">
+    <title>Plate Changer</title>
+
+    <!--CSS and images links-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./fonts/SquadaOne-Regular.ttf" as="font" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <div class="mainoverlary">
+        <div class="header">Plate Changer</div>
+        <div class="alt">Change Vehicle Plate</div>
+        <div class="exit">Exit</div>
+        <div class="exit" style="padding: 0.09rem 0.6rem;margin-left: 35.75rem;background-color: rgb(255, 254, 254,0.1);border: none;">ESC</div>
+    </div>
+    <div id="wrapper" class="wrapper">
+        <div id="plate" class="container">
+            <input id="text" name="text" class="input-text" placeholder="SAMPLE" maxlength="6" style="font-family: def2;">
+            <div aria-label="Placeholder for flex"></div>
+        </div>
+        <div id="btns" class="btn-container">
+            <button id="one">Accept</button>
+            <button id="two">Cancel</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script defer src="https://kit.fontawesome.com/3828d6dd29.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
